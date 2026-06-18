@@ -114,7 +114,7 @@
             color: var(--text-muted);
         }
 
-        /* ===== TARJETAS (CIERRE DE TODO) ===== */
+        /* ===== TARJETAS FINAL ===== */
 
         .tarjetas-final {
             margin-top: 60px;
@@ -133,8 +133,12 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.08);
         }
 
-        .icono {
-            font-size: 2.5rem;
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
         .tarjeta h3 {
@@ -198,22 +202,25 @@
         <p>© 2026 Conectando código y comunidad.</p>
     </footer>
 
-    <!-- 🔻 AQUÍ ESTÁ LO QUE PEDISTE: AL FINAL DE TODO -->
+    <!-- 🔻 TARJETAS CON IMÁGENES -->
     <section class="tarjetas-final">
+
         <div class="tarjeta">
-            <div class="icono">🔒</div>
+            <img src="https://source.unsplash.com/600x400/?cybersecurity,hacker" alt="Ciberseguridad">
             <h3>Ciberseguridad</h3>
             <p>Protección de sistemas y datos contra amenazas digitales.</p>
         </div>
 
         <div class="tarjeta">
-            <div class="icono">☁️</div>
+            <img src="https://source.unsplash.com/600x400/?cloud,technology,server" alt="Cloud Computing">
             <h3>Cloud Computing</h3>
             <p>Despliegue y escalado de aplicaciones en la nube.</p>
         </div>
+
     </section>
 
 </div>
 
 </body>
 </html>
+   
