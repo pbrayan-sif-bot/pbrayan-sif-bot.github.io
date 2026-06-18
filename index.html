@@ -6,7 +6,6 @@
     <title>Mi Espacio Profesional - Informática Social</title>
 
     <style>
-        /* Variables de color modernas */
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
@@ -53,7 +52,6 @@
         .subtitle {
             color: var(--text-muted);
             font-size: 1.2rem;
-            letter-spacing: 1px;
         }
 
         section {
@@ -64,14 +62,10 @@
             font-size: 1.5rem;
             color: var(--accent);
             margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         p {
             color: var(--text-muted);
-            margin-bottom: 15px;
         }
 
         .grid {
@@ -91,17 +85,10 @@
             padding: 20px;
             border-radius: 8px;
             border: 1px solid #334155;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent-social);
         }
 
         .card h3 {
             color: #fff;
-            margin-bottom: 10px;
         }
 
         .links-section {
@@ -111,37 +98,29 @@
         }
 
         .btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             background-color: var(--card-bg);
             color: var(--text-main);
             text-decoration: none;
             padding: 15px 20px;
             border-radius: 8px;
             border: 1px solid #334155;
-            font-weight: 600;
-        }
-
-        .btn:hover {
-            background-color: #273549;
-            color: var(--accent);
+            display: flex;
+            justify-content: space-between;
         }
 
         footer {
             text-align: center;
             margin-top: 60px;
             color: var(--text-muted);
-            font-size: 0.9rem;
         }
 
-        /* ===== NUEVAS TARJETAS ===== */
+        /* ===== TARJETAS (CIERRE DE TODO) ===== */
 
-        .tarjetas-grid {
+        .tarjetas-final {
+            margin-top: 60px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            margin-top: 20px;
         }
 
         .tarjeta {
@@ -151,24 +130,24 @@
             border-radius: 12px;
             text-align: center;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-        }
-
-        .tarjeta h3 {
-            color: #0f172a;
-            margin: 10px 0;
-        }
-
-        .tarjeta p {
-            color: #475569;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
         }
 
         .icono {
             font-size: 2.5rem;
         }
 
+        .tarjeta h3 {
+            margin: 10px 0;
+            color: #0f172a;
+        }
+
+        .tarjeta p {
+            color: #475569;
+        }
+
         @media (max-width: 600px) {
-            .tarjetas-grid {
+            .tarjetas-final {
                 grid-template-columns: 1fr;
             }
         }
@@ -185,57 +164,54 @@
     </header>
 
     <section>
-        <h2>[ / ] Sobre mí</h2>
-        <p>
-            Estudiante enfocado en el desarrollo de sistemas y la administración de entornos tecnológicos seguros.
-        </p>
+        <h2>Sobre mí</h2>
+        <p>Estudiante enfocado en desarrollo de sistemas y tecnología.</p>
     </section>
 
     <section>
-        <h2>[ 💡 ] Áreas de Interés</h2>
+        <h2>Áreas de Interés</h2>
 
         <div class="grid">
             <div class="card">
                 <h3>Desarrollo e Infraestructura</h3>
-                <p>Diseño de sistemas, algoritmos y servidores robustos.</p>
+                <p>Sistemas y servidores robustos.</p>
             </div>
 
             <div class="card">
-                <h3>Análisis de Redes Informativas</h3>
-                <p>Estudio del flujo de datos en entornos comunitarios.</p>
+                <h3>Análisis de Redes</h3>
+                <p>Flujo de información comunitaria.</p>
             </div>
         </div>
-
-        <!-- TARJETAS NUEVAS -->
-        <div class="tarjetas-grid">
-            <div class="tarjeta">
-                <div class="icono">🔒</div>
-                <h3>Ciberseguridad</h3>
-                <p>Protección de sistemas y datos contra amenazas digitales.</p>
-            </div>
-
-            <div class="tarjeta">
-                <div class="icono">☁️</div>
-                <h3>Cloud Computing</h3>
-                <p>Despliegue y escalado de aplicaciones en la nube.</p>
-            </div>
-        </div>
-
     </section>
 
     <section>
-        <h2>[ 🔗 ] Conectemos</h2>
+        <h2>Conectemos</h2>
 
         <div class="links-section">
-            <a href="#" class="btn">📁 Portafolio →</a>
-            <a href="#" class="btn">🐙 GitHub →</a>
-            <a href="#" class="btn">📩 Contacto →</a>
+            <a href="#" class="btn">Portafolio →</a>
+            <a href="#" class="btn">GitHub →</a>
+            <a href="#" class="btn">Contacto →</a>
         </div>
     </section>
 
     <footer>
         <p>© 2026 Conectando código y comunidad.</p>
     </footer>
+
+    <!-- 🔻 AQUÍ ESTÁ LO QUE PEDISTE: AL FINAL DE TODO -->
+    <section class="tarjetas-final">
+        <div class="tarjeta">
+            <div class="icono">🔒</div>
+            <h3>Ciberseguridad</h3>
+            <p>Protección de sistemas y datos contra amenazas digitales.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">☁️</div>
+            <h3>Cloud Computing</h3>
+            <p>Despliegue y escalado de aplicaciones en la nube.</p>
+        </div>
+    </section>
 
 </div>
 
