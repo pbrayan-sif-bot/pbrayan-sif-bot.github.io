@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Espacio Profesional - Informática Social</title>
+
     <style>
         /* Variables de color modernas */
         :root {
@@ -11,8 +12,8 @@
             --card-bg: #1e293b;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
-            --accent: #38bdf8; /* Azul tecnológico */
-            --accent-social: #34d399; /* Verde social */
+            --accent: #38bdf8;
+            --accent-social: #34d399;
         }
 
         * {
@@ -34,7 +35,6 @@
             margin: 0 auto;
         }
 
-        /* Encabezado / Perfil */
         header {
             text-align: center;
             padding: 40px 0;
@@ -56,7 +56,6 @@
             letter-spacing: 1px;
         }
 
-        /* Secciones principales */
         section {
             margin: 40px 0;
         }
@@ -75,7 +74,6 @@
             margin-bottom: 15px;
         }
 
-        /* Cuadrícula de Proyectos / Enfoques */
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -83,7 +81,9 @@
         }
 
         @media (max-width: 600px) {
-            .grid { grid-template-columns: 1fr; }
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .card {
@@ -104,7 +104,6 @@
             margin-bottom: 10px;
         }
 
-        /* Enlaces / Redes */
         .links-section {
             display: flex;
             flex-direction: column;
@@ -122,7 +121,6 @@
             border-radius: 8px;
             border: 1px solid #334155;
             font-weight: 600;
-            transition: background-color 0.2s;
         }
 
         .btn:hover {
@@ -136,66 +134,110 @@
             color: var(--text-muted);
             font-size: 0.9rem;
         }
+
+        /* ===== NUEVAS TARJETAS ===== */
+
+        .tarjetas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tarjeta {
+            background-color: #ffffff;
+            color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .tarjeta h3 {
+            color: #0f172a;
+            margin: 10px 0;
+        }
+
+        .tarjeta p {
+            color: #475569;
+        }
+
+        .icono {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .tarjetas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        
-        <!-- ENCABEZADO -->
-        <header>
-            <h1 class="profile-title">Bryan</h1>
-            <p class="subtitle">Informatica & Gestión Social de Tecnología</p>
-        </header>
+<div class="container">
 
-        <!-- SOBRE MÍ -->
-        <section>
-            <h2>[ / ] Sobre mí</h2>
-            <p>
-                Estudiante enfocado en el desarrollo de sistemas y la administración de entornos tecnológicos seguros. Creo firmemente que la informática adquiere su verdadero valor cuando se aplica para resolver dinámicas del mundo real, optimizar la comunicación comunitaria y democratizar el acceso a la información.
-            </p>
-        </section>
+    <header>
+        <h1 class="profile-title">Bryan</h1>
+        <p class="subtitle">Informática & Gestión Social de Tecnología</p>
+    </header>
 
-        <!-- ENFOQUE TÉCNICO Y SOCIAL -->
-        <section>
-            <h2>[ 💡 ] Áreas de Interés</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Desarrollo e Infraestructura</h3>
-                    <p>Diseño de lógica de sistemas, algoritmos eficientes y despliegue de servidores en entornos robustos y controlados.</p>
-                </div>
-                <div class="card">
-                    <h3>Análisis de Redes Informativas</h3>
-                    <p>Estudio del flujo de datos en entornos comunitarios para diseñar plataformas que se adapten a las interacciones sociales humanas.</p>
-                </div>
+    <section>
+        <h2>[ / ] Sobre mí</h2>
+        <p>
+            Estudiante enfocado en el desarrollo de sistemas y la administración de entornos tecnológicos seguros.
+        </p>
+    </section>
+
+    <section>
+        <h2>[ 💡 ] Áreas de Interés</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Desarrollo e Infraestructura</h3>
+                <p>Diseño de sistemas, algoritmos y servidores robustos.</p>
             </div>
-        </section>
 
-        <!-- ENLACES Y CONTACTO -->
-        <section>
-            <h2>[ 🔗 ] Conectemos</h2>
-            <div class="links-section">
-                <a href="#" class="btn">
-                    <span>📁 Portafolio de Proyectos</span>
-                    <span>→</span>
-                </a>
-                <a href="#" class="btn">
-                    <span>🐙 GitHub / Repositorios</span>
-                    <span>→</span>
-                </a>
-                <a href="#" class="btn">
-                    <span>📩 Contacto Profesional</span>
-                    <span>→</span>
-                </a>
+            <div class="card">
+                <h3>Análisis de Redes Informativas</h3>
+                <p>Estudio del flujo de datos en entornos comunitarios.</p>
             </div>
-        </section>
+        </div>
 
-        <!-- PIE DE PÁGINA -->
-        <footer>
-            <p>© 2026 Conectando código y comunidad.</p>
-        </footer>
+        <!-- TARJETAS NUEVAS -->
+        <div class="tarjetas-grid">
+            <div class="tarjeta">
+                <div class="icono">🔒</div>
+                <h3>Ciberseguridad</h3>
+                <p>Protección de sistemas y datos contra amenazas digitales.</p>
+            </div>
 
-    </div>
+            <div class="tarjeta">
+                <div class="icono">☁️</div>
+                <h3>Cloud Computing</h3>
+                <p>Despliegue y escalado de aplicaciones en la nube.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>[ 🔗 ] Conectemos</h2>
+
+        <div class="links-section">
+            <a href="#" class="btn">📁 Portafolio →</a>
+            <a href="#" class="btn">🐙 GitHub →</a>
+            <a href="#" class="btn">📩 Contacto →</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Conectando código y comunidad.</p>
+    </footer>
+
+</div>
 
 </body>
 </html>
