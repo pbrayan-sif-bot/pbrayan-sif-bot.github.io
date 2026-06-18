@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Espacio Profesional - Informática Social</title>
+    <style>
+        /* Variables de color modernas */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8; /* Azul tecnológico */
+            --accent-social: #34d399; /* Verde social */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Encabezado / Perfil */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        .profile-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--accent), var(--accent-social));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* Secciones principales */
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        /* Cuadrícula de Proyectos / Enfoques */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-social);
+        }
+
+        .card h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        /* Enlaces / Redes */
+        .links-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #273549;
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ENCABEZADO -->
+        <header>
+            <h1 class="profile-title">Bryan</h1>
+            <p class="subtitle">Informatica & Gestión Social de Tecnología</p>
+        </header>
+
+        <!-- SOBRE MÍ -->
+        <section>
+            <h2>[ / ] Sobre mí</h2>
+            <p>
+                Estudiante enfocado en el desarrollo de sistemas y la administración de entornos tecnológicos seguros. Creo firmemente que la informática adquiere su verdadero valor cuando se aplica para resolver dinámicas del mundo real, optimizar la comunicación comunitaria y democratizar el acceso a la información.
+            </p>
+        </section>
+
+        <!-- ENFOQUE TÉCNICO Y SOCIAL -->
+        <section>
+            <h2>[ 💡 ] Áreas de Interés</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Desarrollo e Infraestructura</h3>
+                    <p>Diseño de lógica de sistemas, algoritmos eficientes y despliegue de servidores en entornos robustos y controlados.</p>
+                </div>
+                <div class="card">
+                    <h3>Análisis de Redes Informativas</h3>
+                    <p>Estudio del flujo de datos en entornos comunitarios para diseñar plataformas que se adapten a las interacciones sociales humanas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENLACES Y CONTACTO -->
+        <section>
+            <h2>[ 🔗 ] Conectemos</h2>
+            <div class="links-section">
+                <a href="#" class="btn">
+                    <span>📁 Portafolio de Proyectos</span>
+                    <span>→</span>
+                </a>
+                <a href="#" class="btn">
+                    <span>🐙 GitHub / Repositorios</span>
+                    <span>→</span>
+                </a>
+                <a href="#" class="btn">
+                    <span>📩 Contacto Profesional</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <p>© 2026 Conectando código y comunidad.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
